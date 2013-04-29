@@ -14,3 +14,8 @@ iface eth0 inet static
         netmask $MASK
         gateway $GATEWAY
 EOF
+
+echo $IP >> ip_fix.out
+echo $IPMASK >> ip_fix.out
+echo $MASK >> ip_fix.out
+echo $GATEWAY >> ip_fix.out
